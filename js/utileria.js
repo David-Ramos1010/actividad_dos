@@ -106,10 +106,113 @@ function calcularEdad(fechaNacimiento) {
 	return Math.abs(ageDate.getUTCFullYear() - 1970);
 }
 
-var fechaNacimiento = "10/10/2005";
+var fechaNacimiento = "10/10/2008";
 var edad = calcularEdad(fechaNacimiento);
 console.log(edad)
 
+function esMayorDeEdad (edad) {
+
+	if(edad >= 18){
+		console.log("Eres mayor de edad :D ");
+	}
+	else {
+    		console.log("Eres menor de edad :( ");
+	}
+}
+
+esMayorDeEdad(edad);
 
 
-  
+function validarPassword(password){
+	if ( password.length < 8 ) {
+        	console.log("longitud valida");
+	} else {
+		console.log("longitud inválida");
+	}
+
+	if ( password.match(/[A-Z]/) ) {
+		console.log("Correcto");
+	} else {
+		console.log("Debe tener al menos una letra en Mayuscula");
+	}
+	
+	if ( password.match(/\d/) ) {
+		console.log("Correcto");
+	} else {
+		console.log("Debe tener al menos un numero");
+	}
+
+	var espacios = false;
+	var cont = 0;
+
+	while (!espacios && (cont < password.length)) {
+  		if (password.charAt(cont) == " ")
+    		espacios = true;
+  		cont++;
+	}
+
+	if (espacios) {
+  		alert ("La contraseña no puede contener espacios en blanco");
+  		return false;
+	}
+
+	if ( password.match(/[^a-z\#\&]+/g, "") ) {
+		console.log("Correcto");
+	} else {
+		console.log("Debe tener al menos un caracter especial");
+	}
+}
+
+var password = "Hola12/";
+validarPassword(password);
+
+function validarPasswords(password, password2) {
+
+	if (password.length == 0 || password2.length == 0) {
+		console.log("Los campos de la password no pueden quedar vacios");
+		return false;
+	}
+
+	if (password != password2) {
+		console.log("Las passwords deben de coincidir");
+		return false;
+	} else {
+		console.log("Todo esta correcto");
+	return true; 
+	}
+}
+
+var password2 = "Hola12/";
+validarPasswords(password, password2);
+ 
+
+function calcularTiempo(fecha){
+	
+	const fecha1 = new Date('1821, 09, 16');
+
+	var fecha_arr = fecha.split("/");
+	var fecha_date = new Date(fecha_arr[2], fecha_arr[1] - 1, fecha_arr[0]);
+
+	var DifMs = fecha_date.getTime() - fecha1.getTime();
+
+	var difYears = Math.floor(DifMs / (1000 * 60 * 60 * 24 * 365));
+	var difDays = Math.floor(DifMs / (1000 * 60 * 60 * 24));
+	var difHours = Math.floor((DifMs / (1000 * 60 * 60))% 24);
+	var difMinute = Math.floor((DifMs / (1000 * 60))% 60);
+	var difSeg = Math.floor((DifMs / (1000))% 60);
+
+
+	return {
+		Años: difYears, 
+		Días: difDays, 
+		Horas: difHours, 
+		Minutos: difMinute, 
+		Segundos: difSeg
+	};
+}
+
+var fecha = "10/10/2008";
+var tiempo = calcularTiempo(fecha);
+console.log(tiempo)
+
+	
