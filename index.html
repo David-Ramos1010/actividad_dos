@@ -2,14 +2,15 @@
 <html lang = es>
 	<head>
 		<meta charset = "UTF-8">
-		<meta name = "viewport" content = "width = width-device, initial-scale = 1.0">
+		<meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
 		<title>
 			Act 2 - Uso de una biblioteca
 		</title>
-		<script src = "js/utileria.js"></script>
+		<script src = "js/utileria.js" defer></script>
 	</head>
 
 	<body>
-		
+		<label for = "email">Hola</label>
+		<input type = "email" id = "email"  onkeyup="console.log(validarEmail(this.value) ? 'Email válido' : 'Email inválido')">
 	</body>
 </html>
