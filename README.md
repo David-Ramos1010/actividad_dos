@@ -48,7 +48,7 @@ function calcularTiempo(fecha) {}
 ```
 ### Captura de pantalla de los ejercicios en consola
 Aquí utilice una prueba experimental de cuanto finalice todas las funciones. 
-![Demo](img/captur.png)
+![Demo](img/captura.png)
 ![Demo2](img/captura1.png)
 
 ### Index.html
