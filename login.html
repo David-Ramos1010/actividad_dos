@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang = es>
+	<head>
+		<meta charset = "UTF-8">
+		<meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+		<title>
+			Act 2 - Login
+		</title>
+		<script src = "js/utileria.js" defer></script>
+		<link rel = "stylesheet" href = "css/utileria.css">
+	</head>
+
+	<body>
+		<div class = "barra-superior">
+			<a href = "index.html" class = "enlace-login">← Volver al formulario</a>
+		</div>
+		<div class = "contenedor-formulario">
+			<h1>Iniciar sesión</h1>
+			<p class = "subtitulo">Regístrate o inicia sesión para continuar.</p>
+			<form class = "formulario-login" novalidate>
+
+				<div class = "grupo-formulario">
+					<label for = "nombre-login">Nombre completo</label>
+					<input type = "text" id = "nombre-login" placeholder = "Ej: David Ramos" >
+					<small class="error" id="error-nombre-login"></small>
+				</div>
+
+				<div class = "grupo-doble">
+					<div class = "grupo-formulario">
+						<label for = "fecha-nacimiento">Fecha de nacimiento</label>
+						<input type = "text" id = "fecha-nacimiento" placeholder = "dd/mm/aaaa">
+						<small class="error" id="error-fecha-nacimiento"></small>
+					</div>
+
+					<div class = "grupo-formulario">
+						<label for = "telefono-login">Teléfono</label>
+						<input type = "tel" id = "telefono-login" placeholder = "Ej: 9511234567">
+						<small class="error" id="error-telefono-login"></small>
+					</div>
+				</div>
+
+				<div class = "grupo-formulario">
+					<label for = "email-login">Email</label>
+					<input type = "email" id = "email-login" placeholder = "Ej: DavidRamos@ejemplo.com" >
+					<small class="error" id="error-email-login"></small>
+				</div>
+
+				<div class = "grupo-doble">
+					<div class = "grupo-formulario">
+						<label for = "password">Contraseña</label>
+						<input type = "password" id = "password" placeholder = "Mínimo 8 caracteres">
+						<small class="error" id="error-password"></small>
+					</div>
+
+					<div class = "grupo-formulario">
+						<label for = "password2">Confirmar contraseña</label>
+						<input type = "password" id = "password2" placeholder = "Repite tu contraseña">
+						<small class="error" id="error-password2"></small>
+					</div>
+				</div>
+
+				<button type = "submit" class = "boton-enviar">
+					Iniciar sesión <span>→</span>
+				</button>
+				<div id="mensaje-general-login" class="mensaje-general"></div>
+			</form>
+		</div>
+		<footer>
+			<p style = "text-align: center; margin-top: 19px;"><em>© - David Efraín Jose Ramos - NL 19</em></p>
+		</footer>
+	</body>
+</html>
