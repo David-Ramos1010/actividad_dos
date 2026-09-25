@@ -48,7 +48,8 @@ function calcularTiempo(fecha) {}
 ```
 ### Captura de pantalla de los ejercicios en consola
 Aquí utilice una prueba experimental de cuanto finalice todas las funciones. 
-![Diseño de la estructura](img/estructura.png)
+![Demo](img/captura.png)
+![Demo2](img/captura1.png)
 
 ### Index.html
 Aquí se añadió el índice donde se puede ubicar enlistados todos los ejercicios realizados.
