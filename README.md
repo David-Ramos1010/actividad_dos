@@ -50,6 +50,7 @@ function calcularTiempo(fecha) {}
 Aquí utilice una prueba experimental de cuanto finalice todas las funciones. 
 ![Demo](img/captura3.png)
 ![Demo2](img/captura1.png)
+![Final](img/captura4.png)
 
 ### Index.html
 Aquí se añadió el índice donde se puede ubicar enlistados todos los ejercicios realizados.
