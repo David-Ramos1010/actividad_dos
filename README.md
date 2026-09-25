@@ -1,8 +1,16 @@
 # Actividad dos - Mi primera librería en JavaScript
-***
 ## La librería se llama utilería y son 6 funciones en JavaScript con dos extras creadas por nosotros. 
 Todo lo anterior se va a enlazar con un index y un login en GithubPages siguiendo la siguiente 
 estructura:
+***
+#### Elaborado por: David Efraín José Ramos NL 19
+## Problema que resuelvo
+Realmente las funciones que aquí se plantean funcionan más en un formulario de cualquier pagina web con la finalidad de tal vez tener datos estadísticos. Por ejemplo, nosotros queremos obtener edades de nuestros principales consumidores. Nosotros como programadores no podemos dejarlo libre ya que muchos usuarios pueden equivocarse y si se equivocan es posible de que no tengamos datos exactos.
+***
+### Instalación en un html con etiqueta 
+```html
+<link rel = "stylesheet" href = "css/utileria.css">
+```
 
 ![Diseño de la estructura](img/estructura.png)
 ### Primera función - Validar Correo 
@@ -53,5 +61,5 @@ Aquí utilice una prueba experimental de cuanto finalice todas las funciones.
 ![Final](img/captura4.png)
 
 ### Index.html
-Aquí se añadió el índice donde se puede ubicar enlistados todos los ejercicios realizados.
+En el index se añadio una especie de formulario y en 'iniciar sesión' es donde realmente sucede la magia.
 #### Elaborado por: David Efraín José Ramos
