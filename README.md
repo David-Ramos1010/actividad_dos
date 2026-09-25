@@ -2,11 +2,18 @@
 ***
 ## La librería se llama utilería y son 6 funciones en JavaScript con dos extras creadas por nosotros. 
 Todo lo anterior se va a enlazar con un index y un login en GithubPages siguiendo la siguiente estructura:
-### Ejercicio uno - Hola mundo
-Este ejercicio no fue más que una introducción a las herramientas que usaremos más adelante. Aquí aprendí a como usar un servidor local.
-### Ejercicio dos - Párrafos
-En este ejercicio aprendí a usar unas nuevas etiquetas en los párrafos y en lo particular yo experimente con el css.
-![Diseño de parrafo](img/captura1.png)
+![Diseño de la estructura](img/estructura.png)
+### Primera función - Validar Correo 
+Esta función valida primero desde una expresión regular, luego separa el nombre del usuario y del dominio para verificar que ambos no estén vacíos y que no tengan caracteres especiales.
+Resive de valor el email:
+```js
+function validarEmail(email) {}
+```
+### Segunda función - Validar que sean solo letras
+En esta segunda función se nos solicita que validemos una cadena caracteres donde solo aparezcan letras mayúsculas o minúsculas e inclusive acentuadas. Para lograr eso utilice  una expresión regular.
+```js
+function validarTexto(text) {}
+```
 ### Ejercicio tres - Enlaces simples
 Aquí aprendí a enlazar un párrafo a una página web externa. Me surgió la duda de si se puede poner 'href' y 'target' en un css.
 ### Ejercicio cuatro - Imágenes básicas
